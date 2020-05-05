@@ -1,0 +1,1 @@
+# firebase-ports-and-adapters
