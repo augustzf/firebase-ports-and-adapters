@@ -1,9 +1,9 @@
-import admin = require("firebase-admin");
+import admin = require("firebase-admin")
 admin.initializeApp()
 
 import * as functions from 'firebase-functions'
 import { firebaseAdapter } from "./app"
 
 // expose cloud functions to Firebase
-export const buyCatApi = functions.https.onRequest(firebaseAdapter.buyCat)
+export const buyCatApi = functions.https.onRequest(firebaseAdapter.dispatch)
 
